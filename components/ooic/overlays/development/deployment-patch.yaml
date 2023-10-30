@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: ooic
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - env:
+        - name: POC
+          value: POC
+        image: quay.io/redhat-appstudio-qe/byoc-xxrp-tenant/byoc-app-zdwm/ooic@sha256:8e766fe1c4af392e73c27620d6f2c831bcbe7fcb03c96d19e5241a437745db5d
+        name: my-java-quarkus
+        resources: {}
+status: {}
