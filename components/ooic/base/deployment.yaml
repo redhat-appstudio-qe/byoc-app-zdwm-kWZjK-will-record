@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: ooic
     spec:
       containers:
-      - image: java-quarkus-image:latest
+      - image: quay.io/redhat-appstudio-qe/byoc-xxrp-tenant/byoc-app-zdwm/ooic@sha256:8e766fe1c4af392e73c27620d6f2c831bcbe7fcb03c96d19e5241a437745db5d
         name: my-java-quarkus
         ports:
         - containerPort: 8081
